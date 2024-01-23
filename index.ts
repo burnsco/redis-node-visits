@@ -15,7 +15,7 @@ async function main() {
 
   app.get('/', async (req: Request, res: Response) => {
     const views = await client.get('views');
-    res.send(`Views = ${views} (Hey this is new)`);
+    res.send(`Views = ${views} (asdfdsf?)`);
 
     views
       ? // set the views key, but parse it as int first then add one

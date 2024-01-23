@@ -5,7 +5,10 @@ services:
       - 6379:6379
 
   simpleweb:
-    build: .
+    build:
+      context: .
+    volumes:
+      - ./:/app
     ports:
       - 3001:3000
     depends_on:
